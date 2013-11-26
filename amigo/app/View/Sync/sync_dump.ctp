@@ -1,24 +1,37 @@
 <?php
-//print_r($last_sync);
-// print_r($changes);
-// echo($ctrl);
-// print_r($pk_name);
-// echo($pk_name);
-// print_r($record[$ctrl]);
-// echo "<br/>";
-// print_r($fields);
-// echo "<br/>";
-// // print_r($values);
-// echo($col_name);
-// echo "<br/>";
-// // print_r($col_type);
-// echo "<br/>";
-// print_r($values);
-// echo($op);
-// echo "<br/>";
-// echo($sql);
-
-/* redirect to home page at /amigo/index */
-header("location: /amigo/");
-exit();
+if (isset($success)) {
+	?>
+	<div class="jumbotron">
+		<h1>Amigo Database Synchronization</h1>
+		<p><?php echo $success; ?></p>
+		<p>
+			<a href="/amigo/" class="btn btn-lg btn-primary">Back to home page</a>
+		</p>
+	</div>
+	<?php
+} elseif (isset($error)) {
+	?>
+	<div class="jumbotron">
+		<h1>Amigo Database Synchronization</h1>
+		<p><span class="label label-danger"><?php echo $error; ?></span></p>
+		<p>
+			<a href="/amigo/" class="btn btn-lg btn-primary">Back to home page</a>
+		</p>
+	</div>
+	<?php
+} elseif (isset($info)) {
+	?>
+	<div class="jumbotron">
+		<h1>Amigo Database Synchronization</h1>
+		<p><span class="label label-info"><?php echo $info; ?></span></p>
+		<p>
+			<a href="/amigo/" class="btn btn-lg btn-primary">Back to home page</a>
+		</p>
+	</div>
+	<?php
+}else{
+	/* redirect to home page at /amigo/index */
+	header("location: /amigo/");
+	exit();
+}
 ?>
