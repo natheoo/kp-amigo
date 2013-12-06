@@ -1,21 +1,12 @@
 <div class="jumbotron">
 	<h1>Amigo Database Synchronization</h1>
 	<p>Amigo database synchronization is a project designed for synchronizing Amigo Group's databases.</p>
-	<p>Just enter the database name and click on this button.</p>
+	<p>Just click on this button.</p>
 	<p>
 		<?php echo $this->Form->create(false, array('action' => 'sync_dump')); ?>
 		<div class="row">
 		  	<div class="col-lg-5">
-		    	<div class="input-group input-group-lg">
-		      		<?php
-		      		echo $this->Form->input('database',array(
-		      			'label' => false,
-		      			'placeholder' => 'database name',
-		      			'class' => 'form-control',
-		      			'div' => false
-		      		));
-		      		?>
-		      		<span class="input-group-btn">
+		    	<div class="btn-group btn-group-lg">
 		        		<?php
 		        		echo $this->Form->end(array(
 							'name' => 'submit',

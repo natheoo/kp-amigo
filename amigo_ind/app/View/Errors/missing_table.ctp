@@ -1,7 +1,7 @@
 <div class="jumbotron">
 	<h1>Sinkronisasi Database Amigo</h1>
 	<p>
-		<span class="label label-danger">Ups... Database tidak ditemukan. Pastikan pengaturan database sudah benar.</span>
+		<span class="label label-danger">Database yang Anda masukkan salah. Pastikan pengaturan database sudah benar.</span>
 	</p>
 	<p>
 		<a href="/amigo_ind/" class="btn btn-lg btn-primary">Kembali ke halaman utama</a>

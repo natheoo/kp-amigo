@@ -1,0 +1,34 @@
+ga perlu disinkronisasi karena: temp:
+-t... (kecuali tempak7, tempak7rinci)
+-datasync_settings
+-logs_amigo
+-nomor_urut
+
+ga perlu disinkronisasi karena: dr pusat ke toko:
+-department
+-karyawan
+-kedalaman_produk
+-merk
+-strip
+-supplier
+-supp_barang
+-sub_kategori
+
+
+tambah primary key id auto inc di tabel:
+-d_bon
+-d_retur_beli
+-d_stock_opname (ada 3 pk, drop lalu buat id)
+-d_transfer
+-d_transfer_kembali
+-lokasi_barang
+
+
+
+++: tambah di laporan:
+-misal tambah tabel --> tambah model,trigger,inflector
+-tambah primary key utk yg belum ada
+
+dokumentasi:
+-yg perlu diubah di code apa
+-kalo ada tambah tabel gmn

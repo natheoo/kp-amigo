@@ -1,5 +1,5 @@
 <?php
-class SetupPromo extends AppModel{
+class Setuppromo extends AppModel{
 	
 }
 ?>
